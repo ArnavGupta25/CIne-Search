@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     function fetchRandomMovies(word) {
-        fetch(`http://www.omdbapi.com/?s=${word}&type=movie&apikey=a09fd492`)
+        fetch(`https://www.omdbapi.com/?s=${word}&type=movie&apikey=a09fd492`)
             .then(response => response.json())
             .then(data => {
                 if (data.Response === "True" && data.Search) {
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (searchTerm !== "") {
             filterBtn.style.display = "inline-block";
             topSuggestions.style.display = "none";
-            fetch(`http://www.omdbapi.com/?s=${searchTerm}&apikey=a09fd492`)
+            fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=a09fd492`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.Response === "True") {
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function fetchDetailedMovies(movies) {
         const promises = movies.map(movie => {
-            return fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=a09fd492`)
+            return fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=a09fd492`)
                 .then(response => response.json());
         });
 
