@@ -56,7 +56,7 @@
             const imdbID = getParameterByName('imdbID');
             if (imdbID) {
                 // Fetch movie details using IMDb ID
-                fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=a09fd492`)
+                fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=a09fd492`)
                     .then(response => response.json())
                     .then(data => {
                         // Display movie details
