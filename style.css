@@ -118,6 +118,8 @@ input {
     padding: 10px; 
     color: #000;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .movie-card img {
@@ -142,6 +144,66 @@ input {
 }
 
 .added-to-watchlist {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* White text color */
+    background-color: #333;
+    color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-brand  {
+        margin-right: 0;
+    }
+
+    .navbar-brand span{
+        display: none;
+    }
+
+    .main {
+        padding: 10px;
+    }
+    
+    .movie-card {
+        width: calc(50% - 15px);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #search-bar {
+        max-width: 100%;
+    }
+    
+    .movie-card {
+        width: calc(100% - 10px);
+    }
 }
