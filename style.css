@@ -1,0 +1,147 @@
+:root {
+    --default-text-color: #fff;
+    --logo-color: rgb(115, 206, 249);
+    --page-background-color: #ffffff;
+    --form-color: rgb(109, 114, 121);
+    --search-icon-color: #3d3e43;
+    --main-bgcolor: #e1e1e1;
+    --start-exploring: #b1b1b1;
+}
+
+body {
+    background-color: var(--page-background-color);
+    color: var(--default-text-color);
+}
+
+.site-name {
+    color: var(--logo-color);
+    position: absolute;
+    top: 0;
+}
+
+#search-bar {
+    height: 40px;
+    width: 45vw;
+}
+
+form {
+    width: inherit;
+    background-color: var(--form-color);
+    border-radius: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+input {
+    width: 90%;
+    height: 2.5rem;
+    outline: none;
+    padding: 1.5rem;
+    border: 0;
+    background-color: transparent;
+    color: var(--default-text-color);
+}
+
+::placeholder {
+    opacity: 0.7;
+    color: var(--default-text-color);
+}
+
+#search-btn {
+    height: 2.9rem;
+    width: 4.5rem;
+    border: transparent;
+    background-color: var(--logo-color);
+}
+
+.search-icon {
+    font-size: 20px;
+    color: var(--search-icon-color);
+}
+
+#filter-btn {
+    height: 2.9rem;
+    width: 4.5rem;
+    border: transparent;
+    background-color: var(--logo-color);
+    display: none;
+}
+
+.filter-icon {
+    font-size: 20px;
+    color: var(--search-icon-color);
+    
+}
+
+.main {
+    background-color: var(--main-bgcolor);
+    padding: 40px;
+    min-height: calc(100vh - 78px);
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.main p{
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.top-suggestions {
+    margin-bottom: 20px;
+}
+
+.top-suggestions h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 800;
+}
+
+.fav-container {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.movie-card {
+    width: calc(30% - 20px); 
+    margin-bottom: 20px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    color: #000;
+    cursor: pointer;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.start-exploring {
+    color: var(--start-exploring);
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.start-exploring span {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.added-to-watchlist {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+}

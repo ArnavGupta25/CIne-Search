@@ -1,0 +1,65 @@
+:root {
+    --default-text-color: #fff;
+    --logo-color: rgb(115, 206, 249);
+    --page-background-color: #ffffff;
+    --main-bgcolor: #e1e1e1;
+    --start-exploring: #b1b1b1;
+}
+
+body {
+    background-color: var(--page-background-color);
+    color: var(--default-text-color);
+}
+
+.site-name {
+    color: var(--logo-color);
+    position: absolute;
+    top: 0;
+}
+
+/* .main {
+    background-color: var(--main-bgcolor);
+    padding: 40px;
+    min-height: calc(100vh - 78px);
+} */
+
+.main {
+    background-color: var(--main-bgcolor);
+    padding: 40px;
+    min-height: calc(100vh - 78px);
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.main p{
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.fav-container {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.movie-card {
+    width: calc(30% - 20px); 
+    margin-bottom: 20px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

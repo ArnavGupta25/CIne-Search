@@ -1,0 +1,72 @@
+:root {
+    --default-text-color: #fff;
+    --logo-color: rgb(115, 206, 249);
+    --page-background-color: #ffffff;
+    --main-bgcolor: #e1e1e1;
+    --start-exploring: #b1b1b1;
+}
+
+body {
+    background-color: var(--page-background-color);
+    color: var(--default-text-color);
+    font-family: Arial, sans-serif;
+}
+
+.site-name {
+    color: var(--logo-color);
+    position: absolute;
+    top: 0;
+}
+
+.heading{
+    font-weight: 700;
+}
+
+.main {
+    background-color: var(--main-bgcolor);
+    padding: 40px;
+    min-height: calc(100vh - 78px);
+}
+
+
+.container {
+    max-width: 800px;
+    /* margin: 50px auto; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block; 
+    margin: 0 auto; 
+    border: 5px solid black;
+}
+
+.container p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.container strong {
+    font-weight: bold;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 10px;
+    }
+}
